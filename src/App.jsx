@@ -12,7 +12,7 @@ function App() {
   const [userUpdate, setUserUpdate] = useState();
   const [isFormClose, setIsFormClose] = useState(true);
   const [notification, setNotification] = useState(null);
-  const baseUrl = 'http://localhost:8080/users';
+  const baseUrl = 'https://entregable2-backend.onrender.com';
   const [users, getUsers, createUser, deleteUser, updateUser] = useFetch(baseUrl);
 
   useEffect(() => {
